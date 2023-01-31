@@ -1,1 +1,27 @@
+.App .container {
+  width: 900px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 30px;
+}
 
+.App .book-icon {
+  text-align: center;
+  font-size: 50px;
+  color: #43473e;
+  margin-bottom: 30px;
+}
+
+.App .github-icon {
+  text-align: center;
+  font-size: 16px;
+  margin-top: 30px;
+}
+
+.App a {
+  color: #43473e;
+}
+
+.App a:hover {
+  color: #5c343b;
+}
