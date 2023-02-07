@@ -1,0 +1,8 @@
+section.Photos {
+  margin-top: 20px;
+}
+
+.Photos img {
+  border-radius: 3px;
+  margin-bottom: 20px;
+}
