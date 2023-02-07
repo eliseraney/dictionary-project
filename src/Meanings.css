@@ -1,0 +1,11 @@
+.Meanings .meaning {
+  border: 1px solid #5c343b;
+  border-radius: 5px;
+  padding: 0px 10px;
+  margin-top: 20px;
+}
+
+.Meanings .example {
+  font-size: 14px;
+  font-style: italic;
+}

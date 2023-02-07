@@ -1,0 +1,12 @@
+.Synonyms li {
+  display: inline-block;
+  list-style: none;
+  padding-right: 10px;
+  opacity: 90%;
+  margin-left: 0;
+  font-size: 14px;
+}
+
+ul {
+  padding-left: 0;
+}
