@@ -9,15 +9,14 @@ export default function Dictionary() {
   const [results, setResults] = useState(null);
 
   function handleResponse(response) {
-    console.log(response.data);
-    setResults(response.data);
+    console.log(response.data[0]);
+    setResults(response.data[0]);
   }
 
   function handleSearch(event) {
     event.preventDefault();
 
-    const apiKey = `4b5921d9-1756-47f5-ad62-611d835b40f4`;
-    const apiUrl = `https://www.dictionaryapi.com/api/v3/references/collegiate/json/${keyword}?key=${apiKey}`;
+    const apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`;
     axios.get(apiUrl).then(handleResponse);
   }
 

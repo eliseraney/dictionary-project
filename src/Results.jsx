@@ -1,19 +1,21 @@
 import React from "react";
 
+import Definition from "./Defintion";
+
 import "./Results.css";
 
 export default function Results(props) {
   if (props.results) {
     return (
       <div className="Results">
-        <h2 className="headword">{props.results[0].hwi.hw}</h2>
-        <h4 className="pronunciation">{props.results[0].hwi.prs[0].mw}</h4>
-        <h5 className="functional-label">{props.results[0].fl}</h5>
-        <p>{props.results[0].shortdef[0]}</p>
-        <h5 className="functional-label">{props.results[1].fl}</h5>
-        <p>{props.results[1].shortdef[0]}</p>
-        <h5 className="functional-label">{props.results[2].fl}</h5>
-        <p>{props.results[2].shortdef[0]}</p>
+        <h2>{props.results.word}</h2>
+        {props.results.meanings.map(function (definition, index) {
+          return (
+            <div key={index}>
+              <Definition definition={definition} />
+            </div>
+          );
+        })}
       </div>
     );
   } else {
